@@ -30,6 +30,7 @@ $facheck-radio-checked: '\f192' !default;
     &::before {
       margin-right: 0.5em;
       font-family: $facheck-font-family;
+      font-size: 120%;
       font-weight: 400;
       vertical-align: text-bottom;
     }
