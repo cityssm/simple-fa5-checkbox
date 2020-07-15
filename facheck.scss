@@ -1,0 +1,94 @@
+$facheck-font-family: 'Font Awesome 5 Free' !default;
+// $facheck-fontFamily: 'Font Awesome 5 Pro';
+//
+$facheck-checkbox-empty:   '\f0c8' !default;
+$facheck-checkbox-checked: '\f14a' !default;
+
+$facheck-radio-empty:   '\f111' !default;
+$facheck-radio-checked: '\f192' !default;
+
+
+.facheck {
+  position: relative;
+  min-height: 1em;
+  line-height: normal;
+
+  input {
+    opacity: 0;
+    margin: 0;
+
+    &:focus + label::before {
+      outline: thin dotted;
+      outline-offset: 2px;
+    }
+  }
+
+  label {
+    position: absolute;
+    left: 0;
+
+    &::before {
+      margin-right: 0.5em;
+      font-family: $facheck-font-family;
+      font-weight: 400;
+      vertical-align: text-bottom;
+    }
+  }
+
+  input[type='checkbox'] {
+    & + label::before {
+      content: $facheck-checkbox-empty;
+    }
+
+    &:checked + label::before {
+      content: $facheck-checkbox-checked;
+    }
+  }
+
+  input[type='radio'] {
+    & + label::before {
+      content: $facheck-radio-empty;
+    }
+
+    &:checked + label::before {
+      content: $facheck-radio-checked;
+    }
+  }
+}
+
+/*
+ * Inline Styles
+ */
+
+.facheck-inline {
+  display: inline-block;
+
+  + .facheck-inline {
+    margin-left: 1em;
+  }
+
+  label {
+    position: relative;
+    margin-left: -18px;
+    white-space: nowrap;
+  }
+
+}
+
+/*
+ * Other icon weights
+ */
+
+.facheck-fas label::before,
+.facheck-fas-checked input:checked + label::before {
+  font-weight: 900;
+}
+
+.facheck-far-checked input:checked + label::before {
+  font-weight: 400;
+}
+
+.facheck-fal label::before,
+.facheck-fal-checked input:checked + label::before {
+  font-weight: 300;
+}

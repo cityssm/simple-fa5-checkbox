@@ -1,0 +1,67 @@
+@import 'facheck';
+
+@import 'bulma/sass/utilities/initial-variables';
+@import 'bulma/sass/utilities/derived-variables';
+
+
+input[type='checkbox'] + label::before {
+
+  .facheck.is-primary & {
+    color: $primary;
+  }
+
+  .facheck.is-danger & {
+    color: $danger;
+  }
+
+  .facheck.is-info & {
+    color: $info;
+  }
+
+  .facheck.is-warning & {
+    color: $warning;
+  }
+
+  .facheck.is-success & {
+    color: $success;
+  }
+
+  .facheck.is-dark & {
+    color: $dark;
+  }
+
+  .facheck.is-black & {
+    color: $black;
+  }
+}
+
+input[type='checkbox']:checked + label::before {
+
+  .facheck.has-checked-primary & {
+    color: $primary;
+  }
+
+  .facheck.has-checked-danger & {
+    color: $danger;
+  }
+
+  .facheck.has-checked-info & {
+    color: $info;
+  }
+
+  .facheck.has-checked-warning & {
+    color: $warning;
+  }
+
+  .facheck.has-checked-success & {
+    color: $success;
+  }
+
+  .facheck.has-checked-dark & {
+    color: $dark;
+  }
+
+  .facheck.has-checked-black & {
+    color: $black;
+  }
+}

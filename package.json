@@ -1,0 +1,28 @@
+{
+  "name": "@cityssm/simple-fa5-checkbox",
+  "version": "0.0.1",
+  "description": "Simple Font Awesome 5 Checkboxes",
+  "main": "facheck.min.css",
+  "scripts": {
+    "test": "index.htm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityssm/simple-fa5-checkbox.git"
+  },
+  "keywords": [
+    "html",
+    "checkbox",
+    "radio",
+    "font-awesome-5"
+  ],
+  "author": "Corporation of the City of Sault Ste. Marie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cityssm/simple-fa5-checkbox/issues"
+  },
+  "homepage": "https://github.com/cityssm/simple-fa5-checkbox#readme",
+  "devDependencies": {
+    "bulma": "^0.9.0"
+  }
+}

@@ -1,0 +1,289 @@
+<html>
+<head>
+  <title>Simple FA5 Checkboxes by the City of Sault Ste. Marie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="facheck-bulma.min.css" />
+  <style>
+    html {
+      font-family: Arial, sans-serif;
+      font-size: 16pt;
+      line-height: 1.4;
+    }
+
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 5px;
+    }
+
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      margin-left: 0;
+      font-size: 12pt;
+    }
+
+    footer {
+      margin: 40px 0 20px 0;
+      text-align: right;
+      font-size: 12pt;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simple <abbr title="Font Awesome 5">FA5</abbr> Checkboxes</h1>
+
+  <h2>Getting Started</h2>
+
+  <p>
+    Download the stylesheet from
+    <a href="https://github.com/cityssm/simple-fa5-checkbox">GitHub</a>,
+    or grab it from
+    <a href="https://www.npmjs.com/package/@cityssm/simple-fa5-checkbox">npm</a>.
+  </p>
+
+<pre>
+npm install @cityssm/simple-fa5-checkbox</pre>
+
+  <p>
+    Add the stylesheet to your page,
+    and wrap your <code>input</code> and <code>label</code> tags
+    in a <code>.facheck</code> wrapper.
+  </p>
+
+  <h2>Checkbox Examples</h2>
+
+  <p class="facheck">
+    <input id="checkbox1" type="checkbox" checked />
+    <label for="checkbox1">Checkbox in regular style</label>
+  </p>
+
+  <p class="facheck facheck-fas">
+    <input id="checkbox2" type="checkbox" checked />
+    <label for="checkbox2">Checkbox in solid style</label>
+  </p>
+
+  <p class="facheck facheck-fas-checked">
+    <input id="checkbox3" type="checkbox" checked />
+    <label for="checkbox3">Checkbox in solid style when checked</label>
+  </p>
+
+  <p class="facheck facheck-fas facheck-far-checked">
+    <input id="checkbox4" type="checkbox" checked />
+    <label for="checkbox4">Checkbox in regular style when checked</label>
+  </p>
+
+  <div>
+    <span class="facheck facheck-inline" style="font-size:8pt;">
+      <input id="checkbox-smallest" type="checkbox" checked />
+      <label for="checkbox-smallest">Smallest</label>
+    </span>
+    <span class="facheck facheck-inline" style="font-size:12pt;">
+      <input id="checkbox-small" type="checkbox" checked />
+      <label for="checkbox-small">Small</label>
+    </span>
+    <span class="facheck facheck-inline" style="font-size:16pt;">
+      <input id="checkbox-medium" type="checkbox" checked />
+      <label for="checkbox-medium">Medium</label>
+    </span>
+    <span class="facheck facheck-inline" style="font-size:20pt;">
+      <input id="checkbox-large" type="checkbox" checked />
+      <label for="checkbox-large">Large</label>
+    </span>
+    <span class="facheck facheck-inline" style="font-size:24pt;">
+      <input id="checkbox-larger" type="checkbox" checked />
+      <label for="checkbox-larger">Larger</label>
+    </span>
+  </div>
+  <div class="facheck" style="font-size:48pt;">
+    <input id="checkbox-ridiculous" type="checkbox" checked />
+    <label for="checkbox-ridiculous">Ridiculous</label>
+  </div>
+
+  <h3>Code Example</h3>
+
+<pre>
+&lt;p class="facheck">
+  &lt;input id="checkboxID" type="checkbox" checked />
+  &lt;label for="checkboxID">Checkbox&lt;/label>
+&lt;/p></pre>
+
+<h2>Radio Buttons</h2>
+
+  <fieldset>
+    <legend>Regular Style</legend>
+    <p class="facheck">
+      <input id="radio1" name="radio" type="radio" checked />
+      <label for="radio1">Option 1</label>
+    </p>
+    <p class="facheck">
+      <input id="radio2" name="radio" type="radio" />
+      <label for="radio2">Option 2</label>
+    </p>
+    <p class="facheck">
+      <input id="radio3" name="radio" type="radio" />
+      <label for="radio3">Option 3</label>
+    </p>
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <legend>Solid Style - Inline</legend>
+    <p class="facheck facheck-fas facheck-inline">
+      <input id="radio4" name="radioB" type="radio" checked />
+      <label for="radio4">Option 4</label>
+    </p>
+    <p class="facheck facheck-fas facheck-inline">
+      <input id="radio5" name="radioB" type="radio" />
+      <label for="radio5">Option 5</label>
+    </p>
+    <p class="facheck facheck-fas facheck-inline">
+      <input id="radio6" name="radioB" type="radio" />
+      <label for="radio6">Option 6</label>
+    </p>
+  </fieldset>
+
+  <h3>Code Example</h3>
+
+<pre>
+&lt;p class="facheck facheck-fas facheck-inline">
+  &lt;input id="radioID" name="radioB" type="radio" checked />
+  &lt;label for="radioID">Radio Option&lt;/label>
+&lt;/p></pre>
+
+  <h2>Using the Bulma Framework</h2>
+
+  <p>
+    <a href="https://bulma.io.">The Bulma framework</a> is by no means required,
+    but if you are using it, you can use the <code>facheck-bulma.min.css</code>
+    stylesheet instead for Bulma-specific styles.
+  <p>
+
+  <fieldset>
+    <legend>Regular Style</legend>
+
+    <p class="facheck is-primary">
+      <input id="checkbox-primary" type="checkbox" checked />
+      <label for="checkbox-primary">is-primary</label>
+    </p>
+
+    <p class="facheck is-danger">
+      <input id="checkbox-danger" type="checkbox" checked />
+      <label for="checkbox-danger">is-danger</label>
+    </p>
+
+    <p class="facheck is-info">
+      <input id="checkbox-info" type="checkbox" checked />
+      <label for="checkbox-info">is-info</label>
+    </p>
+
+    <p class="facheck is-warning">
+      <input id="checkbox-warning" type="checkbox" checked />
+      <label for="checkbox-warning">is-warning</label>
+    </p>
+
+    <p class="facheck is-success">
+      <input id="checkbox-success" type="checkbox" checked />
+      <label for="checkbox-success">is-success</label>
+    </p>
+
+    <p class="facheck is-dark">
+      <input id="checkbox-dark" type="checkbox" checked />
+      <label for="checkbox-dark">is-dark</label>
+    </p>
+
+    <p class="facheck is-black">
+      <input id="checkbox-black" type="checkbox" checked />
+      <label for="checkbox-black">is-black</label>
+    </p>
+  </fieldset>
+
+<pre>
+  &lt;p class="facheck is-success">
+    &lt;input id="checkbox-success" type="checkbox" checked />
+    &lt;label for="checkbox-success">Success Checkbox&lt;/label>
+  &lt;/p></pre>
+
+  <fieldset>
+    <legend>Solid Style</legend>
+
+    <p class="facheck facheck-fas is-primary">
+      <input id="checkbox-primary-fas" type="checkbox" checked />
+      <label for="checkbox-primary-fas">is-primary</label>
+    </p>
+
+    <p class="facheck facheck-fas is-danger">
+      <input id="checkbox-danger-fas" type="checkbox" checked />
+      <label for="checkbox-danger-fas">is-danger</label>
+    </p>
+
+    <p class="facheck facheck-fas is-info">
+      <input id="checkbox-info-fas" type="checkbox" checked />
+      <label for="checkbox-info-fas">is-info</label>
+    </p>
+
+    <p class="facheck facheck-fas is-warning">
+      <input id="checkbox-warning-fas" type="checkbox" checked />
+      <label for="checkbox-warning-fas">is-warning</label>
+    </p>
+
+    <p class="facheck facheck-fas is-success">
+      <input id="checkbox-success-fas" type="checkbox" checked />
+      <label for="checkbox-success-fas">is-success</label>
+    </p>
+
+    <p class="facheck facheck-fas is-dark">
+      <input id="checkbox-dark-fas" type="checkbox" checked />
+      <label for="checkbox-dark-fas">is-dark</label>
+    </p>
+
+    <p class="facheck facheck-fas is-black">
+      <input id="checkbox-black-fas" type="checkbox" checked />
+      <label for="checkbox-black-fas">is-black</label>
+    </p>
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <legend>Using Multiple Styles</legend>
+
+    <p class="facheck facheck-fas-checked is-primary">
+      <input id="checkbox-primary-fas-checked" type="checkbox" checked />
+      <label for="checkbox-primary-fas-checked">facheck-fas-checked is-primary</label>
+    </p>
+
+    <p class="facheck facheck-fas is-warning has-checked-info">
+      <input id="checkbox-warning-info" type="checkbox" checked />
+      <label for="checkbox-warning-info">facheck-fas is-warning has-checked-info</label>
+    </p>
+
+    <p class="facheck facheck-fas-checked is-danger has-checked-success">
+      <input id="checkbox-danger-success-fas" type="checkbox" checked />
+      <label for="checkbox-danger-success-fas">facheck-fas-checked is-danger has-checked-success</label>
+    </p>
+
+<pre>
+&lt;p class="facheck facheck-fas-checked is-danger has-checked-success">
+  &lt;input id="checkboxID" type="checkbox" checked />
+  &lt;label for="checkboxID">Checkbox&lt;/label>
+&lt;/p></pre>
+
+  </fieldset>
+
+<footer>
+  Free to use.<br />
+  Made with ❤️ by <a href="https://saultstemarie.ca/">the City of Sault Ste. Marie</a>.
+</footer>
+
+</body>
+</html>
