@@ -4,14 +4,36 @@ $facheck-checkbox-checked: '\f14a' !default;
 $facheck-radio-empty: '\f111' !default;
 $facheck-radio-checked: '\f192' !default;
 
+/*
+ * Other icon weights
+ */
+
+.facheck-fas label::before,
+.facheck-fas-checked input:checked + label::before {
+  font-weight: 900;
+}
+
+.facheck-far-checked input:checked + label::before {
+  font-weight: 400;
+}
+
+.facheck-fal label::before,
+.facheck-fal-checked input:checked + label::before {
+  font-weight: 300;
+}
+
+/*
+ * Base styles
+ */
+
 .facheck {
   position: relative;
   min-height: 1em;
   line-height: normal;
 
   input {
-    opacity: 0;
     margin: 0;
+    opacity: 0;
 
     &:focus + label::before {
       outline: thin dotted;
@@ -56,6 +78,7 @@ $facheck-radio-checked: '\f192' !default;
 /*
  * Inline Styles
  */
+
 .facheck-inline {
   display: inline-block;
 
@@ -68,22 +91,4 @@ $facheck-radio-checked: '\f192' !default;
     margin-left: -18px;
     white-space: nowrap;
   }
-}
-
-/*
- * Other icon weights
- */
- 
-.facheck-fas label::before,
-.facheck-fas-checked input:checked + label::before {
-  font-weight: 900;
-}
-
-.facheck-far-checked input:checked + label::before {
-  font-weight: 400;
-}
-
-.facheck-fal label::before,
-.facheck-fal-checked input:checked + label::before {
-  font-weight: 300;
 }
