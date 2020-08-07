@@ -1,12 +1,8 @@
-$facheck-font-family: 'Font Awesome 5 Free' !default;
-// $facheck-fontFamily: 'Font Awesome 5 Pro';
-//
-$facheck-checkbox-empty:   '\f0c8' !default;
+$facheck-font-family: 'Font Awesome 5 Free' !default; // $facheck-fontFamily: 'Font Awesome 5 Pro';
+$facheck-checkbox-empty: '\f0c8' !default;
 $facheck-checkbox-checked: '\f14a' !default;
-
-$facheck-radio-empty:   '\f111' !default;
+$facheck-radio-empty: '\f111' !default;
 $facheck-radio-checked: '\f192' !default;
-
 
 .facheck {
   position: relative;
@@ -56,11 +52,9 @@ $facheck-radio-checked: '\f192' !default;
     }
   }
 }
-
 /*
  * Inline Styles
  */
-
 .facheck-inline {
   display: inline-block;
 
@@ -73,13 +67,10 @@ $facheck-radio-checked: '\f192' !default;
     margin-left: -18px;
     white-space: nowrap;
   }
-
 }
-
 /*
  * Other icon weights
  */
-
 .facheck-fas label::before,
 .facheck-fas-checked input:checked + label::before {
   font-weight: 900;
