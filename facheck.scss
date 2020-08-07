@@ -52,6 +52,7 @@ $facheck-radio-checked: '\f192' !default;
     }
   }
 }
+
 /*
  * Inline Styles
  */
@@ -68,9 +69,11 @@ $facheck-radio-checked: '\f192' !default;
     white-space: nowrap;
   }
 }
+
 /*
  * Other icon weights
  */
+ 
 .facheck-fas label::before,
 .facheck-fas-checked input:checked + label::before {
   font-weight: 900;
