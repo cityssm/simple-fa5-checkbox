@@ -2,7 +2,9 @@
 @import 'bulma/sass/utilities/initial-variables';
 @import 'bulma/sass/utilities/derived-variables';
 
-input[type='checkbox'] + label::before {
+input[type='checkbox'] + label::before,
+input[type='radio'] + label::before {
+  
   .facheck.is-primary & {
     color: $primary;
   }
@@ -32,7 +34,9 @@ input[type='checkbox'] + label::before {
   }
 }
 
-input[type='checkbox']:checked + label::before {
+input[type='checkbox']:checked + label::before,
+input[type='radio']:checked + label::before, {
+
   .facheck.has-checked-primary & {
     color: $primary;
   }

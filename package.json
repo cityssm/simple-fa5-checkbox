@@ -1,6 +1,6 @@
 {
   "name": "@cityssm/simple-fa5-checkbox",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Simple Font Awesome 5 Checkboxes",
   "main": "facheck.min.css",
   "scripts": {
