@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/cityssm/simple-fa5-checkbox#readme",
   "devDependencies": {
-    "bulma": "^0.9.1"
+    "bulma": "^1.0.0"
   }
 }
